@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/assets/alura-logo.svg" />
+    <title>Decodificador de texto</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/alura-logo.svg" alt="" />
+    </header>
+    <main>
+      <div class="decoder">
+        <textarea
+          type="text"
+          name=""
+          id="textInput"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <div class="important">
+          <img src="./assets/important.svg" alt="" />
+          <span>Apenas letras minúsculas</span>
+        </div>
+        <div class="buttons-wrapper">
+          <button class="encrypt" id="encrypt">Criptografar</button>
+          <button class="decrypt" id="decrypt">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+      <div class="result">
+        <div class="with-text" id="withText">
+          <textarea id="output" disabled></textarea>
+          <button class="copy" id="copy">Copiar</button>
+        </div>
+        <div class="no-text" id="noText">
+          <img src="assets/empty-img.svg" class="empty-img" alt="" />
+          <strong>Nenhuma mensagem encontrada</strong>
+          <span
+            >Digite um texto que você deseja criptografar ou
+            descriptografar</span
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>&copy; Feito por Renata Dellamatriz</span>
+      <a href="https://github.com/RenataDellamatriz">
+        <img class="icon" src="./assets/github-icon.svg" alt=""
+      /></a>
+      <a href="https://www.linkedin.com/in/renatadellamatriz"
+        ><img class="icon" src="./assets/linkedin-icon.svg" alt=""
+      /></a>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
